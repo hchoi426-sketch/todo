@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <div class="background-globes">
         <div class="globe globe-1"></div>
@@ -19,7 +21,12 @@
 
     <div class="app-container">
         <header>
-            <h1>My Tasks</h1>
+            <div class="header-top">
+                <h1>My Tasks</h1>
+                <button id="themeToggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
             <p class="date-display" id="dateDisplay">Wednesday, Feb 11</p>
         </header>
 
@@ -37,7 +44,7 @@
         <ul class="todo-list" id="todoList">
             <!-- Tasks will be added here dynamically -->
         </ul>
-        
+
         <div class="empty-state" id="emptyState">
             <i class="fas fa-clipboard-check"></i>
             <p>No tasks found</p>
@@ -46,4 +53,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
