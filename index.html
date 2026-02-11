@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Todo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+        <div class="globe globe-3"></div>
+    </div>
+
+    <div class="app-container">
+        <header>
+            <h1>My Tasks</h1>
+            <p class="date-display" id="dateDisplay">Wednesday, Feb 11</p>
+        </header>
+
+        <div class="input-group">
+            <input type="text" id="todoInput" placeholder="What needs to be done?" autocomplete="off">
+            <button id="addBtn"><i class="fas fa-plus"></i></button>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <ul class="todo-list" id="todoList">
+            <!-- Tasks will be added here dynamically -->
+        </ul>
+        
+        <div class="empty-state" id="emptyState">
+            <i class="fas fa-clipboard-check"></i>
+            <p>No tasks found</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
